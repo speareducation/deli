@@ -71,11 +71,17 @@ Sandwich Toppings are Toppings that have been added to a Sandwich
 
 #### Examples:
 
-Add toppings to a sandwich *(must be sent as PATCH all at once, if you add one then another individually, it will update to just the last topping, this is intentional)*
-```
-PATCH /api/v1/sandwiches/:id/toppings, {toppings: [1]}
-```
 Get a list of all the toppings added to a sandwich
 ```
 GET  /api/v1/sandwiches/:id/toppings
 ```
+
+Add toppings to a sandwich *(must be sent as PATCH all at once, if you patch one then another individually, it will update to just the last list value(s), this is intentional)*
+```
+PATCH /api/v1/sandwiches/:id/toppings, {toppings: [1]}
+```
+or
+```
+PATCH /api/v1/sandwiches/:id/toppings, {toppings: [1,2,3]}
+```
+
