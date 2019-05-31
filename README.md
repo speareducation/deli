@@ -23,7 +23,7 @@ you feel comfortable with.
 Resources
 =========
 Use these resources to build your client.  The server with these resources can
-be accessed at *http://deli-api.chaddio.com*
+be accessed at *http://deli.chaddio.com*
 
 ```
 GET  /api/v1/toppings                   # List toppings
@@ -37,7 +37,7 @@ POST /api/v1/sandwiches/:id/topping     # Add a topping to an existing sandwich
 
 *Example curl command to create a sandwich:*
 ```
-curl -H "Content-Type: application/json" -H "Accept: application/json" http://deli-api.chaddio.com/api/v1/sandwiches --data '{"name": "My Favorite Veggie Sandwich", "description": "All Veggies possible and Avacado","base" : 3, "price" : 6.99}'
+curl -H "Content-Type: application/json" -H "Accept: application/json" http://deli.chaddio.com/api/v1/sandwiches --data '{"name": "My Favorite Veggie Sandwich", "description": "All Veggies possible and Avacado","base" : 3, "price" : 6.99}'
 ```
 
 Sandwich
